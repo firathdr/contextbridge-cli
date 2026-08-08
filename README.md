@@ -20,14 +20,14 @@ and include no telemetry.
 Install the published CLI globally:
 
 ```bash
-npm install --global contextbridge-cli
+npm install --global @fyavas/contextbridge-cli
 cb --help
 ```
 
 Or run it without a global install:
 
 ```bash
-npx contextbridge-cli --help
+npx @fyavas/contextbridge-cli --help
 ```
 
 For local development from a cloned repository:

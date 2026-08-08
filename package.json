@@ -1,5 +1,5 @@
 {
-  "name": "contextbridge-cli",
+  "name": "@fyavas/contextbridge-cli",
   "version": "0.1.0",
   "description": "Local-first handoff system between coding agents, web AI chats, and local repositories.",
   "type": "module",
