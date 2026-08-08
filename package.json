@@ -1,0 +1,69 @@
+{
+  "name": "contextbridge-cli",
+  "version": "0.1.0",
+  "description": "Local-first handoff system between coding agents, web AI chats, and local repositories.",
+  "type": "module",
+  "bin": {
+    "cb": "dist/cli.js",
+    "contextbridge": "dist/cli.js",
+    "contextbridge-cli": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "verify": "npm run typecheck && npm test && npm run build",
+    "prepack": "npm run verify"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "context",
+    "developer-tools",
+    "local-first"
+  ],
+  "author": "Fırat Yavaş <firatyavas12@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firathdr/contextbridge-cli.git"
+  },
+  "homepage": "https://github.com/firathdr/contextbridge-cli#readme",
+  "bugs": {
+    "url": "https://github.com/firathdr/contextbridge-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "commander": "^14.0.0",
+    "diff": "^8.0.2",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.5",
+    "js-tiktoken": "^1.0.21",
+    "simple-git": "^3.28.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-javascript": "^0.23.1",
+    "tree-sitter-typescript": "^0.23.2",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/diff": "^7.0.2",
+    "@types/node": "^24.2.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
